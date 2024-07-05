@@ -57,7 +57,7 @@ project:
   numbering:
     headings: true
   downloads:
-    - title: pdf
+    - title: Download PDF
       file: paper.pdf
 site:
   template: article-theme
