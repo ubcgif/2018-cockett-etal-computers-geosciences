@@ -8,10 +8,23 @@ project:
     - name: Rowan Cockett
       email: rowanc1@gmail.com
       affiliation: ubcgif
+      orcid: 0000-0002-7859-8394
+      github: rowanc1
+      twitter: rowancockett
     - name: Lindsey J. Heagy
       affiliation: ubcgif
+      orcid: 0000-0002-1551-5926
     - name: Eldad Haber
       affiliation: ubcgif
+  affiliations:
+    - id: ubcgif
+      ror: https://ror.org/03rmrcq20
+      name: Geophysical Inversion Facility, University of British Columbia
+      department: Department of Earth, Ocean and Atmospheric Sciences
+      province: British Columbia
+      country: Canada
+      address: 6339 Stores Road
+      postal_code: V6T 1Z4
   doi: https://doi.org/10.1016/j.cageo.2018.04.006
   github: https://github.com/ubcgif/2018-cockett-etal-computers-geosciences
   # license: CC-BY-4.0  # uncomment this and the line below if open access
@@ -40,6 +53,7 @@ project:
     GB: gigabytes
   # Cockett and Haber developed the mathematical derivation and scope. Cockett and Heagy developed the software, numerical testing and performed the numerical simulations. Both Cockett and Heagy contributed to the final version of the manuscript; Haber supervised the project.
   thumbnail: thumbnail.png
+  banner: banner.png
   numbering:
     headings: true
   downloads:
