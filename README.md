@@ -1,75 +1,28 @@
-# Template repository for papers by the GIF group
+## Efficient 3D inversions using the Richards equation 
 
-Please use this repository as a template for papers
+_Rowan Cockett, Lindsey J. Heagy and Eldad Haber_
 
-## Repository name
-
-The naming convention should follow 
-
-```
-year-authors-journal-short-title
-```
-
-As an example for two authors: 
-```
-2023-heagy-oldenburg-gji-casing-permeability
-```
-
-if there are more than 2 authors, you can use `etal` to indicate multiple authors, e.g. 
-```
-2024-heagy-etal-tle-future-of-applied-geophysics
-```
-
-## Contents
-
-The paper should be put in a `paper` folder. You can put the original latex there. The published pdf from the journal should also be included here. 
-
-Please also include a `thumbnail.png`. This should be a high-impact figure from the paper. 
-
-## MyST.md
-
-The key file that you will need to update is the `myst.yml` file which is located in the `paper` folder. You will need to fill out the fields that are currently commented out. 
-
-The project id should follow the pattern `ubcgif-YEAR-AUTHORS-JOURNAL`, e.g. `ubcgif-2023-heagy-oldenburg-gji` or `2024-heagy-etal-tle`
-
-Descriptions of the fields is available here: https://mystmd.org/guide/frontmatter#available-frontmatter-fields
-
-## Previewing the site
-
-You can preview the build using MyST. Please have MyST installed ([instructions](https://mystmd.org/guide/installing)). From the `paper` folder, you can then run 
-
-```
-myst start
-```
-
-and a preview will launch, usually from `http://localhost:3000`
-
-Also, whenever you create a pull-request to the repo, curvenote will build you a preview 🚀. A link will be added to the comment thread that looks something like this 
-
-![image](https://github.com/ubcgif/template-repository-paper/assets/6361812/b7a144c5-8458-474b-98c4-9e5890ac859e)
-
-
-## README 
-Please use the following as a template for the 
-```
-# Template repository for papers
-
-_Authors_
-
-[https://doi.org/XXX](https://doi.org/XXX)
+https://doi.org/10.1016/j.cageo.2018.04.006
 
 ![thumbnail](./paper/thumbnail.png)
 
 ## Summary
 
-Summary of the paper here (pulled from abstract/summary of paper) 
+Fluid flow in the vadose zone is governed by the Richards equation; it is parameterized by hydraulic conductivity, which is a nonlinear function of pressure head. Investigations in the vadose zone typically require characterizing distributed hydraulic properties. Water content or pressure head data may include direct measurements made from boreholes. Increasingly, proxy measurements from hydrogeophysics are being used to supply more spatially and temporally dense data sets. Inferring hydraulic parameters from such datasets requires the ability to efficiently solve and optimize the nonlinear time domain Richards equation. This is particularly important as the number of parameters to be estimated in a vadose zone inversion continues to grow. In this paper, we describe an efficient technique to invert for distributed hydraulic properties in 1D, 2D, and 3D. Our technique does not store the Jacobian matrix, but rather computes its product with a vector. Existing literature for the Richards equation inversion explicitly calculates the sensitivity matrix using finite difference or automatic differentiation, however, for large scale problems these methods are constrained by computation and/or memory. Using an implicit sensitivity algorithm enables large scale inversion problems for any distributed hydraulic parameters in the Richards equation to become tractable on modest computational resources. We provide an open source implementation of our technique based on the SimPEG framework, and show it in practice for a 3D inversion of saturated hydraulic conductivity using water content data through time. 
 
 ## Citation
 
-Please include the formatted citation along with bibtex for the reference
+Cockett, R., Heagy, L. J., & Haber, E. (2018). Efficient 3D inversions using the Richards equation. Computers & Geosciences, 116, 91–102. https://doi.org/10.1016/j.cageo.2018.04.006
 
 ```
-
-## Examples
-- https://github.com/ubcgif/2023-heagy-oldenburg-gji-casing-permeability
-- https://github.com/ubcgif/2024-heagy-etal-tle-future-of-applied-geophysics
+@article{cockett_computers_2018,
+title = {Efficient 3D inversions using the Richards equation},
+journal = {Computers & Geosciences},
+volume = {116},
+pages = {91-102},
+year = {2018},
+issn = {0098-3004},
+doi = {https://doi.org/10.1016/j.cageo.2018.04.006},
+url = {https://www.sciencedirect.com/science/article/pii/S0098300417311494}
+}
+```
