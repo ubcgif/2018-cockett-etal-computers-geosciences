@@ -1,49 +1,49 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  # id: ubcgif-YEAR-AUTHORS-JOURNAL
-  # title: TITLE OF PAPER
-  # description: SHORT DESCRIPTION HERE
+  id: ubcgif-2018-cockett-etal-computers-geosciences
+  title: Efficient 3D inversions using the Richards equation
+  description: Fluid flow in the vadose zone, governed by the Richards equation, requires characterizing hydraulic properties using direct and proxy measurements. We present an efficient inversion technique for 1D, 2D, and 3D hydraulic properties, implemented in SimPEG, enabling large-scale inversions with modest resources.
   authors:
-    # - name: AUTHOR 1
-    #   email: EMAIL
-    #   corresponding: true
-    #   orcid: ORCID
-    #   affiliation:
-    #     id: ubc
-    #     name: Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, British Columbia
-    # - name: Lindsey J. Heagy
-    #   email: lheagy@eoas.ubc.ca
-    #   corresponding: true
-    #   orcid: 0000-0002-1551-5926
-    #   affiliation: ubc
-  # doi: DOI
-  # arxiv: ARXIV
-  # github: GITHUB-URL
-  # date: YYYY/MM/DD # date of publication
+    - name: Rowan Cockett
+      email: rowanc1@gmail.com
+      affiliation: ubcgif
+    - name: Lindsey J. Heagy
+      affiliation: ubcgif
+    - name: Eldad Haber
+      affiliation: ubcgif
+  doi: https://doi.org/10.1016/j.cageo.2018.04.006
+  github: https://github.com/ubcgif/2018-cockett-etal-computers-geosciences
   # license: CC-BY-4.0  # uncomment this and the line below if open access
-  # open_access: true
+  date: 2018-07-01
+  biblio:
+    volume: 116
+    first_page: 91
+    last_page: 102
   venue:
-    # title: JOURNAL NAME
-    # url: JOURNAL URL
+    title: Computers & Geosciences
+    url: https://www.sciencedirect.com/journal/computers-and-geosciences
   history:
-    # received: YYYY/MM/DD
-    # accepted: YYYY/MM/DD
-    # published: YYYY/MM/DD
+    received: 2017-11-04
+    accepted: 2018-04-14
+    published: 2018-07-01
   keywords:
-    # - KEYWORD 1
-    # - KEYWORD 2
-    # - KEYWORD 3
-    # - KEYWORD 4
+    - Vadose zone
+    - Inverse modelling
+    - Richards equation
+    - Parameter estimation
+  subject: Original Research
   abbreviations:
-    # CSEM: controlled source electromagnetics
-    # EM: electromagnetics
+    MAP: Maximum A Posteriori
+    MAC: Marker and Cell
+    PDE: partial differential equation
+    GB: gigabytes
+  # Cockett and Haber developed the mathematical derivation and scope. Cockett and Heagy developed the software, numerical testing and performed the numerical simulations. Both Cockett and Heagy contributed to the final version of the manuscript; Haber supervised the project.
   thumbnail: thumbnail.png
   numbering:
     headings: true
+  downloads:
+    - title: pdf
+      file: paper.pdf
 site:
   template: article-theme
-  actions:
-    - title: pdf
-      # url: NAME-OF-PDF.pdf
-      static: true
